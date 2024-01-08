@@ -379,6 +379,7 @@ export interface ApiAnalysisAnalysis extends Schema.CollectionType {
     slug: Attribute.UID<'api::analysis.analysis', 'title'>;
     content: Attribute.RichText;
     description: Attribute.Text;
+    thumb: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
