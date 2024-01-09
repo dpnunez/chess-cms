@@ -823,6 +823,8 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     description: Attribute.RichText;
     videoUrl: Attribute.String;
     slug: Attribute.UID<'api::course.course', 'name'>;
+    externalUrl: Attribute.String;
+    isOpening: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
