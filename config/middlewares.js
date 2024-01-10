@@ -1,6 +1,5 @@
-    // ~/strapi-aws-s3/backend/config/middlewares.js
-    
-    module.exports = [
+
+module.exports = ({env}) => [
       'strapi::errors',
       /* Replace 'strapi::security', with this snippet */
       /* Beginning of snippet */
@@ -15,28 +14,29 @@
                 "'self'",
                 'data:',
                 'blob:',
-                'dl.airtable.com',
-                'chess-strapi-aws-media-bucket.sa-east-1.amazonaws.com',
+                'market-assets.strapi.io',
+                `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
               ],
               'media-src': [
                 "'self'",
                 'data:',
                 'blob:',
-                'dl.airtable.com',
-                'chess-strapi-aws-media-bucket.sa-east-1.amazonaws.com',
+                'market-assets.strapi.io',
+                `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
               ],
               upgradeInsecureRequests: null,
             },
-          },
-        },
       },
-      /* End of snippet */
-      'strapi::cors',
-      'strapi::poweredBy',
-      'strapi::logger',
-      'strapi::query',
-      'strapi::body',
-      'strapi::session',
-      'strapi::favicon',
-      'strapi::public',
-    ];
+    },
+  },
+  
+  /* End of snippet */
+  'strapi::cors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
+];
