@@ -825,6 +825,7 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     slug: Attribute.UID<'api::course.course', 'name'>;
     externalUrl: Attribute.String;
     isOpening: Attribute.Boolean & Attribute.DefaultTo<false>;
+    preview: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
