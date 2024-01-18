@@ -1,57 +1,40 @@
-# 🚀 Getting started with Strapi
+# ChessMaster CMS - Content Management System
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Welcome to the ChessMaster CMS repository! This Content Management System is an integral part of the ChessMaster project, designed to streamline the management and update of educational content for chess courses.
 
-### `develop`
+## Technology Stack
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+- **Strapi:** A headless CMS that provides a flexible and customizable content management solution. Strapi allows easy creation and management of content types, making it a powerful tool for building scalable applications.
 
-```
-npm run develop
-# or
-yarn develop
-```
+- **Amazon S3 Provider:** The CMS utilizes the S3 provider to leverage Amazon Simple Storage Service (S3) as the storage backend. This allows the seamless hosting of media files associated with the ChessMaster project.
 
-### `start`
+- **Railway:** The project is hosted using Railway, a platform that simplifies deployment and hosting of applications. Railway provides a seamless integration with various CI/CD tools, enhancing the development and deployment workflow.
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+## Features
 
-```
-npm run start
-# or
-yarn start
-```
+- **Strapi CMS:** Effortlessly manage and update course content, including text, images, and other media.
 
-### `build`
+- **Amazon S3 Integration:** Store and serve media files efficiently using the scalable and reliable Amazon S3 service.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+- **Railway Hosting:** Deploy and host the CMS with ease on the Railway platform, benefiting from its simplicity and integration with CI/CD pipelines.
 
-```
-npm run build
-# or
-yarn build
-```
+## Getting Started
 
-## ⚙️ Deployment
+To get started with the ChessMaster CMS locally, follow these steps:
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory and install dependencies using `npm install`.
+3. Configure your Strapi settings, including database connections and Amazon S3 credentials.
+4. Run the Strapi development server with `npm run dev`.
 
-## 📚 Learn more
+For detailed instructions on Strapi setup, please refer to the [Strapi Documentation](https://strapi.io/documentation).
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+## Continuous Integration
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+The project is configured with Continuous Integration (CI) using Railway. Each push to the repository triggers automated tests and deployment, ensuring a smooth and reliable development process.
 
-## ✨ Community
+## Contact
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+For any questions or feedback related to the CMS, feel free to create an issue or contact us through [daniel.portonunez@gmail.com](mailto:daniel.portonunez@gmail.com).
 
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Thank you for contributing to the ChessMaster CMS! 🚀✨
