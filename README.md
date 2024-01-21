@@ -1,3 +1,5 @@
+![Slide 16_9 - 1 (2)](https://github.com/dpnunez/chess-cms/assets/46852072/f7e3f170-340e-42c1-b255-2dbcc819e99a)
+
 # ChessMaster CMS - Content Management System
 
 Welcome to the ChessMaster CMS repository! This Content Management System is an integral part of the ChessMaster project, designed to streamline the management and update of educational content for chess courses.
